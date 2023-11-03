@@ -1,0 +1,4 @@
+This is a simple TODO Text File.
+1. Get used to Version Control.
+2. Setup React App.
+3. Setup Story Board for the project.
