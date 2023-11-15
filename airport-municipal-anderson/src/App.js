@@ -1,8 +1,13 @@
+import React, {Fragment} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
-  return (
+  return (<Fragment>
+    <header>
+      <NavBar/>
+    </header>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -12,6 +17,7 @@ function App() {
         
       </header>
     </div>
+    </Fragment>
   );
 }
 
