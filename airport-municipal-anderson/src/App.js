@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome to the Anderson Municipal Airport 
+          Anderson Municipal Airport is happy to welcome you 
         </p>
         
       </header>
