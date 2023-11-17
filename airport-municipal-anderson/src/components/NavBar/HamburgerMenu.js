@@ -20,7 +20,9 @@ const HamburgerMenu = () => {
                 <div className={classes.dropdown}>
                     <a href="/link1" className={classes.dropdownItem}>Weather</a>
                     <a href="/link2" className={classes.dropdownItem}>Radar</a>
-                    <a href="/link3" className={classes.dropdownItem}>Oil Prices</a>            
+                    <a href="/link3" className={classes.dropdownItem}>Oil Prices</a>
+                    <a href="/link3" className={classes.dropdownItem}>Contact</a>
+                    <a href="/link3" className={classes.dropdownItem}>Admin Login</a>
                 </div> )}
             </div>
         </div>
