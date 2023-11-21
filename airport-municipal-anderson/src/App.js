@@ -11,9 +11,8 @@ function App() {
     <Fragment>
       <header>
         <NavBar />
-      </header>     
-      
-      <Carousel images={ImageImports} interval={3000} />
+      </header>      
+      <Carousel images={ImageImports} interval={500} />
     </Fragment>
   );
 }
