@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import classes from './Carousel.module.css';
+//import classes from './Carousel.module.css';
 
-const Carousel = ({ images, interval = 500 }) => {
+const Carousel = ({ images, interval = 3000 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Carousel = ({ images, interval = 500 }) => {
   }, [images.length, interval]);
 
   return (
-    <div className={classes['carousel-container']}>
+    <div className='container'>
       <div
         className="carousel-slide"
         // style={{ transform: `translateX(-${sittingImage * 100}%)` }}
