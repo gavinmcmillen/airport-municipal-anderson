@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import bulmaCarousel from 'bulma-carousel';
 import './ImageCarousel.module.css';
-//import classes from './Carousel.module.css';
 
-const ImageCarousel = ({ images, interval = 3000 }) => {
+
+const ImageCarousel = ({ images, interval }) => {
 
     bulmaCarousel.attach('#image-carousel', {
         slidesToScroll: 1,
@@ -26,7 +26,7 @@ const ImageCarousel = ({ images, interval = 3000 }) => {
                 <div id='image-carousel' className='hero-carousel' >
                     {images.map((image, index) => (
                         <div key={index} style={{display: index === currentImageIndex ? 'block' : 'none'}}>
-                            <img src={image} alt={`Slide ${index}`} />
+                            <img src={image} alt='carousel images'/>
                         </div>
                     ))}
                 </div>
