@@ -1,4 +1,4 @@
-import Airshow1 from '../../assets/carousel-images/airshow short.jpg';
+//import Airshow1 from '../../assets/carousel-images/airshow short.jpg';
 import Airshow2 from '../../assets/carousel-images/fort 5-ATB-trimotor right.jpg';
 import Airshow3 from '../../assets/carousel-images/plane flying.jpg';
 import Airshow4 from '../../assets/carousel-images/private jet front.jpg';

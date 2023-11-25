@@ -30,24 +30,24 @@ const HeroCarousel = ({ images }) => {
     return (
         <section className="hero is-medium has-carousel">
             <div className="container">
-                <div id="image-carousel" className="hero-carousel">
-                    <figure className={`image ${customStyles['is-256x256']}`}> {/* change sizes here use this site for possible references  */}
+                <div id="image-carousel"  className="hero-carousel">
+                    <figure className={`image ${customStyles['is-256x256']}`}> 
                         <img src={images[currentSlide]} alt={`Airshow Slide ${currentSlide + 1}`} />
                     </figure>
                 </div>
             </div>
-            <button 
-                    className={`${customStyles.carouselButton} ${customStyles.carouselButtonLeft}`} 
-                    onClick={prevSlide}
-                >
-                    {'<'}
-                </button>
-                <button 
-                    className={`${customStyles.carouselButton} ${customStyles.carouselButtonRight}`} 
-                    onClick={nextSlide}
-                >
-                    {'>'}
-                </button>
+            <button
+                className={`${customStyles.carouselButton} ${customStyles.carouselButtonLeft}`}
+                onClick={prevSlide}
+            >
+                {'<'}
+            </button>
+            <button
+                className={`${customStyles.carouselButton} ${customStyles.carouselButtonRight}`}
+                onClick={nextSlide}
+            >
+                {'>'}
+            </button>
             {/* <div className="hero-head"></div>
             <div className="hero-body"></div>
             <div className="hero-foot"></div> */}
