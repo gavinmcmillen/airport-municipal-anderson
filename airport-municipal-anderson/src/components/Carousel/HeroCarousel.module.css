@@ -1,0 +1,32 @@
+.custom-carousel-image {
+    width: 256px;  
+    height: 256px; 
+    object-fit: cover; 
+}
+
+.is-256x256 {
+    width: 512px;
+    height: 512px;
+    display: block;
+}
+
+.carouselButton {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove any border */
+    color: white; /* Arrow color */
+    cursor: pointer;
+    font-size: 48px; /* Adjust size as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+    text-shadow: 0 0 12px rgba(236, 148, 8, 0.8); /* Glow effect */
+}
+
+.carouselButtonLeft {
+    left: 500px; 
+}
+
+.carouselButtonRight {
+    right: 500px; 
+}

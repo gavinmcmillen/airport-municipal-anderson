@@ -4,10 +4,11 @@ import Airshow3 from '../../assets/carousel-images/plane flying.jpg';
 import Airshow4 from '../../assets/carousel-images/private jet front.jpg';
 import Airshow5 from '../../assets/carousel-images/yellow plane 2 flying.jpg';
 
+
 //import React from 'react' unnessecary for the moment
 
 const ImageImports = [
-    Airshow1, 
+    // Airshow1, need to learn how to crop photos as this one is longer than wide causing issues
     Airshow2, 
     Airshow3, 
     Airshow4, 
