@@ -31,7 +31,7 @@ const HeroCarousel = ({ images }) => {
         <section className="hero is-medium has-carousel">
             <div className="container">
                 <div id="image-carousel"  className="hero-carousel">
-                    <figure className={`image ${customStyles['is-256x256']}`}> 
+                    <figure className={`image ${customStyles['is-512x512']}`}> 
                         <img src={images[currentSlide]} alt={`Airshow Slide ${currentSlide + 1}`} />
                     </figure>
                 </div>

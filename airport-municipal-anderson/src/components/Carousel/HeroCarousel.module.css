@@ -5,10 +5,11 @@
     object-fit: cover; 
 }
 
-.is-256x256 {
+.is-512x512 {
     width: 512px;
     height: 512px;
     display: block;
+    object-fit: cover;
 }
 
 .carouselButton {
@@ -25,9 +26,9 @@
 }
 
 .carouselButtonLeft {
-    left: 500px; 
+    left: 35%; 
 }
 
 .carouselButtonRight {
-    right: 500px; 
+    right: 35%; 
 }
