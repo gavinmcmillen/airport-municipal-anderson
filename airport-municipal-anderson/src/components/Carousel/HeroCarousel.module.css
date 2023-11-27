@@ -19,7 +19,7 @@
     cursor: pointer;
     font-size: 48px; /* Adjust size as needed */
     position: absolute;
-    top: 35%;
+    top: 42%;
     transform: translateY(-50%);
     z-index: 30;
     text-shadow: 0 0 12px rgba(236, 148, 8, 0.8); /* Glow effect */
