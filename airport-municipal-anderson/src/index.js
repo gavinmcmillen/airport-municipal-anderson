@@ -4,14 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bulma/css/bulma.css';
-import { AxiosProvider } from 'react-axios';
-import axiosInstance from './axiosInstance'; {/*I put the imports here because they can spread accross the entire project. Could help with the dopplar */}
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AxiosProvider instance={axiosInstance}></AxiosProvider>
       <App />
   </React.StrictMode>
 );
