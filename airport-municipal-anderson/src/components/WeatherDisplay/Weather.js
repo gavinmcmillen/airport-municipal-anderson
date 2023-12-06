@@ -24,7 +24,7 @@ const Weather = ({ children }) => {
             });
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <div>Loading Data...</div>;
 
     return (
         <WeatherContext.Provider value={weatherData}>
