@@ -5,7 +5,7 @@ const TemperatureDisplay = () => {
     const weatherData = useContext(WeatherContext);
 
     if (!weatherData || !weatherData.properties || !weatherData.properties.periods) {
-        return <p>No temperature data available.</p>;
+        return <p>Failed to fetch data</p>;
     }
 
     const isToday = (dateString) => {
