@@ -37,7 +37,7 @@ const TemperatureDisplay = () => {
 
     return (
         <div>
-            <h2>Temperature Forecast</h2>
+            <h2>This Week's Forecast</h2>
             {todayDaytime && (
                 <div>
                     <p>Today: {todayDaytime.temperature} / {todayNighttime ? todayNighttime.temperature : '?'} F</p>
