@@ -1,20 +1,41 @@
-import React, { useContext } from 'react';
-import WeatherContext from '../WeatherDisplay/WeatherContext';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const NavBarWeather = () => {
-    const weatherData = useContext(WeatherContext);
+  const [currentTemperature, setCurrentTemperature] = useState(null);
 
-    if (!weatherData || !weatherData.currentTempData) {
-        return <p style={{ color: 'white' }}>No Data</p>;
-    }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`https://api.weather.gov/points/40.23,-85.39`);
+        const weatherDataUrl = response.data.properties.forecast;
 
-    const currentTemperature = weatherData.currentTempData; 
+        const weatherResponse = await axios.get(weatherDataUrl);
+        const weatherData = weatherResponse.data;
 
-    return (
-        <div style={{ color: 'white' }}>
-            <p>Current Temp: {currentTemperature ? `${currentTemperature} F` : 'N/A'}</p>
+        const currentTemp = weatherData.properties.periods[0].temperature;
+
+        setCurrentTemperature(currentTemp);
+      } catch (error) {
+        console.error('Error fetching weather data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div>
+      {currentTemperature !== null ? (
+        <div>
+          <h2>Current Temperature</h2>
+          <p>{currentTemperature}°F</p>
         </div>
-    );
+      ) : (
+        <p>Loading current temperature...</p>
+      )}
+    </div>
+  );
 };
 
 export default NavBarWeather;

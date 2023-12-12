@@ -5,6 +5,7 @@ import 'bulma/css/bulma.css';
 import Weather from './components/WeatherDisplay/Weather';
 import TemperatureDisplay from './components/WeatherDisplay/TemperatureDisplay';
 
+
 function App() {
   return (
     <Fragment>
@@ -13,7 +14,7 @@ function App() {
       </header> 
       <Weather>
         <TemperatureDisplay />    
-      </Weather>       
+      </Weather>     
     </Fragment>
   );
 }
