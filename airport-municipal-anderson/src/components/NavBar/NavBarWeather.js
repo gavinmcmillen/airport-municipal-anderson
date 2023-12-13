@@ -28,11 +28,11 @@ const NavBarWeather = () => {
     <div>
       {currentTemperature !== null ? (
         <div>
-          <h2>Current Temperature</h2>
-          <p>{currentTemperature}°F</p>
+          {/* <h1 style={{color: 'white'}}>Outside</h1>  not really neccessary*/}
+          <p style={{color: 'white'}}>{currentTemperature}°F</p>
         </div>
       ) : (
-        <p>Loading current temperature...</p>
+        <p>Loading</p>
       )}
     </div>
   );
