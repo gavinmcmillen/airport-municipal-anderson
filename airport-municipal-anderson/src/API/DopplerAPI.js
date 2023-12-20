@@ -1,4 +1,4 @@
-//this pulls the entire NWS API 
+//this pulls the entire OpenWeather API 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DopplerContext from './DopplerContext';
