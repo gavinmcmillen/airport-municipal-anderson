@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import 'bulma/css/bulma.css';
+//import 'bulma/css/bulma.css';
 import Weather from './components/WeatherDisplay/Weather';
 import TemperatureDisplay from './components/WeatherDisplay/TemperatureDisplay';
 
