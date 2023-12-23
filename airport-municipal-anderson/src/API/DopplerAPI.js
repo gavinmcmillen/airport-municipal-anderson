@@ -24,7 +24,7 @@ const DopplerAPI = ({ children }) => {
             });
     }, []);
 
-    if (loading) return <div>Loading Data...</div>;
+    if (loading) return <div>Loading Data</div>;
 
     return (
         <DopplerContext.Provider value={weatherData}>
