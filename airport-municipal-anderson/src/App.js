@@ -1,5 +1,5 @@
 
-import DopplerRadar from './API/DopplerRadar';
+import DopplerRadar from './DopplerRadar/DopplerRadar';
 import './App.css';
 
 function App() {
