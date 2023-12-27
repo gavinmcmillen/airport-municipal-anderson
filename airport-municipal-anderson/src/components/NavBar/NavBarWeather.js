@@ -4,10 +4,13 @@ import axios from 'axios';
 const NavBarWeather = () => {
   const [currentTemperature, setCurrentTemperature] = useState(null);
 
+  const long = 40.23
+  const lat = -85.39
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://api.weather.gov/points/40.23,-85.39`);
+        const response = await axios.get(`https://api.weather.gov/points/${long},${lat}`);
         const weatherDataUrl = response.data.properties.forecast;
 
         const weatherResponse = await axios.get(weatherDataUrl);
@@ -39,3 +42,4 @@ const NavBarWeather = () => {
 };
 
 export default NavBarWeather;
+
